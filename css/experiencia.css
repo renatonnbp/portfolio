@@ -96,6 +96,15 @@
   }
   .subtitulo {
     font-size: 2rem;
+    position: relative;
+  }
+  .subtitulo::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #186DF8;
+    position: absolute;
+    top: 20px;
   }
   .experiencia-texto {
     font-size: 1.1rem;
@@ -114,5 +123,15 @@
   .experiencia {
     min-width: 250px;
     margin: 40px 17.5px;
+  }
+  .empresa-bloco {
+    grid-template-columns: 1fr;
+  }
+  #dev {
+    grid-row: 3;
+    text-align: center;
+  }
+  .empresa-habilidades {
+    margin: auto;
   }
 }
