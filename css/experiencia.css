@@ -98,14 +98,13 @@
     font-size: 2rem;
     position: relative;
   }
-  .subtitulo::after {
+  #xp::after {
     content: '';
     width: 5px;
     height: 5px;
     background-color: #186DF8;
     position: absolute;
-    top: 22px;
-    left: 178px;
+    left: 175px;
   }
   .experiencia-texto {
     font-size: 1.1rem;

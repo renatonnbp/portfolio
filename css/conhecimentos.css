@@ -1,0 +1,95 @@
+.conhecimentos {
+  background-color: #040915;
+}
+
+.conhecimento-container {
+  max-width: 1200px;
+  padding: 100px 140px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.subtitulo {
+  color: #186DF8;
+  font-weight: bold;
+  max-width: 6ch;
+}
+
+.conhecimento-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.conhecimento-container li {
+  margin: 10px;
+}
+
+.conhecimento-container a {
+  display: inline-block;
+  width: 70px; 
+  height: 70px; 
+  background-size: cover;
+}
+
+.conhecimento-container a[href*="#html"] {
+  background-image: url('../img/html.svg');
+}
+
+.conhecimento-container a[href*="#css"] {
+  background-image: url('../img/css.svg');
+}
+
+.conhecimento-container a[href*="#js"] {
+  background-image: url('../img/js.svg');
+}
+
+.conhecimento-container a[href*="#react"] {
+  background-image: url('../img/react.svg');
+}
+
+.conhecimento-container a[href*="#vue"] {
+  background-image: url('../img/vue.svg');
+}
+
+.conhecimento-container a[href*="#ts"] {
+  background-image: url('../img/ts.svg');
+}
+
+.conhecimento-container a[href*="#figma"] {
+  background-image: url('../img/figma.svg');
+}
+
+@media (min-width: 1500px) {
+  .conhecimento-container {
+    margin: 160px auto 140px;
+  }
+  .conhecimentos {
+    margin-top: -160px;
+  }
+}
+
+@media (max-width:1000px) {
+  .conhecimento-container {
+    grid-template-columns: 1fr;
+    padding: 50px 70px;
+    gap: 20px;
+  }
+  .subtitulo {
+    max-width: initial;
+    font-size: 2rem;
+  }
+  .subtitulo::after {
+    width: 5px;
+    height: 5px;
+    top: 22px;
+    left: 226px;
+  }
+  .conhecimento-container ul {
+    margin-top: 20px;
+  }
+}
