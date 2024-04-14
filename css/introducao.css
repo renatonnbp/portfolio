@@ -1,0 +1,134 @@
+.introducao {
+  max-width: 1200px;
+  margin: 160px 140px;
+  padding: 65px 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  background-color: #0B1835;
+  border: 2px solid #132858;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.introducao-perfil img {
+  max-width: 1200px;
+}
+
+.san {
+  position: absolute;
+  top: 10px;
+  right: -60px;
+  width: 235px;
+  height: 152px;
+}
+
+.introducao-sobre h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #186DF8;
+  padding-bottom: 10px;
+}
+
+.introducao-sobre h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #EEF7FF;
+  padding-bottom: 10px;
+}
+
+.introducao-sobre h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #D9EDFF;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.introducao-sobre h3::before {
+  content: '';
+  width: 5px;
+  height: 17px;
+  background-color: #186DF8;
+  position: absolute;
+  top: 4px;
+  left: -15px;
+}
+
+.introducao-sobre p {
+  font-size: 1rem;
+  font-weight: 500px;
+  font-family: Montserrat;
+  line-height: 30px;
+  color: #D9EDFF;
+}
+
+@media (min-width: 1650px) {
+  .introducao {
+    margin: 160px auto 140px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .introducao {
+    margin: 80px 70px;
+    padding: 30px 50px;
+  }
+  .san {
+    width: 155px;
+    height: 100px;
+    top: 10px;
+    right: -30px;
+  }
+  .introducao-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .introducao-perfil img {
+    width: 250px;
+  }
+  .introducao-sobre h2 {
+    font-size: 1.3rem;
+  }
+  .introducao-sobre h1 {
+    font-size: 2rem;
+  }
+  .introducao-sobre h3 {
+    font-size: 1.1rem;
+  }
+  .introducao-sobre h3::before {
+    width: 5px;
+    height: 14px;
+    top: 4px;
+    left: -14px;
+  }
+  .introducao-sobre p {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .introducao-perfil img {
+    display: none;
+  }
+  .san {
+    display: none;
+  }
+  .introducao-sobre p {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .introducao {
+    min-width: 250px;
+    margin: 40px 17.5px;
+    padding: 16.5px 25px;
+  }
+}
