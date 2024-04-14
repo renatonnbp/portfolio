@@ -38,13 +38,13 @@
   height: 18px;
   background-color: #186DF8;
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: -4px;
 }
 
 .empresa-ano {
   position: absolute;
-  top: 20px;
+  top: 30px;
   left: -60px;
   font-size: 1rem;
   font-weight: bold;
@@ -100,11 +100,12 @@
   }
   .subtitulo::after {
     content: '';
-    width: 8px;
-    height: 8px;
+    width: 5px;
+    height: 5px;
     background-color: #186DF8;
     position: absolute;
-    top: 20px;
+    top: 22px;
+    left: 178px;
   }
   .experiencia-texto {
     font-size: 1.1rem;
