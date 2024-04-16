@@ -27,6 +27,7 @@
 
 .conhecimento-container li {
   margin: 10px;
+  position: relative;
 }
 
 .conhecimento-container a {
@@ -36,32 +37,46 @@
   background-size: cover;
 }
 
-.conhecimento-container a[href*="#html"] {
+.conhecimento-container a[href*="https://developer.mozilla.org/en-US/docs/Web/HTML"] {
   background-image: url('../img/html.svg');
 }
 
-.conhecimento-container a[href*="#css"] {
+.conhecimento-container a[href*="https://developer.mozilla.org/en-US/docs/Web/CSS"] {
   background-image: url('../img/css.svg');
 }
 
-.conhecimento-container a[href*="#js"] {
+.conhecimento-container a[href*="https://www.javascript.com/"] {
   background-image: url('../img/js.svg');
 }
 
-.conhecimento-container a[href*="#react"] {
+.conhecimento-container a[href*="https://react.dev/"] {
   background-image: url('../img/react.svg');
 }
 
-.conhecimento-container a[href*="#vue"] {
+.conhecimento-container a[href*="https://vuejs.org/"] {
   background-image: url('../img/vue.svg');
 }
 
-.conhecimento-container a[href*="#ts"] {
+.conhecimento-container a[href*="https://www.typescriptlang.org/"] {
   background-image: url('../img/ts.svg');
 }
 
-.conhecimento-container a[href*="#figma"] {
+.conhecimento-container a[href*="https://www.figma.com/"] {
   background-image: url('../img/figma.svg');
+}
+
+.conhecimento-container a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #132858, #1056E5, #186DF8);
+  position: absolute;
+  bottom: 0;
+  transition: .3s ease;
+}
+
+.conhecimento-container a:hover::after {
+  width: 100%;
 }
 
 @media (min-width: 1500px) {
@@ -82,14 +97,25 @@
   .subtitulo {
     max-width: initial;
     font-size: 2rem;
+    position: relative;
   }
   .subtitulo::after {
+    content: '';
     width: 5px;
     height: 5px;
+    background-color: #186DF8;
+    position: absolute;
     top: 22px;
-    left: 226px;
+    left: 230px;
   }
   .conhecimento-container ul {
     margin-top: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .conhecimento-container {
+    padding: 40px 17.5px;
+  }
+}
+

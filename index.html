@@ -4,28 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>renatonunesan</title>
+  <link rel="shortcut icon" href="/img/rsan.ico" type="image/x-icon">
+  <title>renatonunesan - Front End Developer</title>
+  <meta name="description" content="Renato Nunes - Desenvolvedor Front-end e UI Designer">
 </head>
 <body>
   <header class="header">
-    <img class="marca" src="./img/marca.svg" alt="renatonunesan">
-    <nav>
+    <img class="marca" src="./img/marca.svg" alt="renatonunesan" width="325" height="34">
+    <nav data-menu="suave">
       <ul class="header-menu">
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#conhecimentos">Conhecimentos</a></li>
+        <li><a href="#experiencia"><span>Experiência</span></a></li>
+        <li><a href="#projetos"><span>Projetos</span></a></li>
+        <li><a href="#conhecimentos"><span>Conhecimentos</span></a></li>
       </ul>
     </nav>
     <div class="line"></div>
   </header>
   <main>
     <div class="introducao">
-      <img class="san" src="./img/san.svg" alt="san">
+      <img class="san" src="./img/san.svg" alt="san" width="665.000000" height="316.000000">
       <div class="introducao-perfil">
-        <img src="./img/perfil.png" alt="perfil">
+        <img src="./img/perfil.png" alt="perfil" width="300" height="300">
       </div>
       <div class="introducao-sobre">
         <h2>Olá, sou</h2>
@@ -68,12 +68,15 @@
             Site de Preservação da Vida Selvagem, feito em <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>
           </p>
           <span class="btn">
-            <a target="_blank" href="https://renatonunesan.github.io/projeto_animais_fantasticos/">Visualizar Projeto<img src="./img/open.svg" alt=""></a>
+            <a target="_blank" href="https://renatonunesan.github.io/projeto_animais_fantasticos/">Visualizar Projeto<img src="./img/open.svg" alt="" height="20" width="20"></a>
           </span>
         </div>
-        <div class="desktop">
-          <img src="./img/animais-desktop.jpg" alt="Animais Desktop">
-        </div>
+        <div class="desktop animadesktop proj">
+          <img src="./img/animais-desktop.jpg" alt="Animais Desktop" width="770" height="460">
+          <div class="desktop animamobile proj"> 
+            <img src="./img/animais-mobile.jpg" alt="Animais Mobile" width="238" height="436">
+          </div> 
+        </div>  
         <div class="line2"></div>
         <h2 class="titulo-projeto">Pass in web</h2>
         <div class="descricao-projeto">
@@ -82,15 +85,15 @@
             feito em <strong>TypeScript</strong> e <strong>React</strong>
           </p>
           <span class="btn">
-            <a href="#">Visualizar Projeto<img src="./img/open.svg" alt=""></a>
+            <a href="#pass">Visualizar Projeto<img src="./img/open.svg" alt="" height="20" width="20"></a>
           </span>
         </div>
-        <div class="desktop">
-          <img src="./img/pass.jpg" alt="pass in web Desktop">
+        <div class="desktop proj">
+          <img src="./img/pass.jpg" alt="pass in web Desktop" width="603.5" height="412.5">
         </div>
         <div class="line2"></div>
         <div class="repo">
-          <a href="#">Repositórios GitHub</a>
+          <a class="repolink" target="_blank" href="https://github.com/renatonunesan?tab=repositories"><span>Repositórios GitHub</span></a>
         </div>
       </div>
     </section>
@@ -98,13 +101,13 @@
     <div class="conhecimento-container">
       <h2 class="subtitulo">Conhecimentos</h2>
       <ul>
-        <li><a href="#html"></a></li>
-        <li><a href="#css"></a></li>
-        <li><a href="#js"></a></li>
-        <li><a href="#react"></a></li>
-        <li><a href="#vue"></a></li>
-        <li><a href="#ts"></a></li>
-        <li><a href="#figma"></a></li>
+        <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML"></a></li>
+        <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS"></a></li>
+        <li><a target="_blank" href="https://www.javascript.com/"></a></li>
+        <li><a target="_blank" href="https://react.dev/"></a></li>
+        <li><a target="_blank" href="https://vuejs.org/"></a></li>
+        <li><a target="_blank" href="https://www.typescriptlang.org/"></a></li>
+        <li><a target="_blank" href="https://www.figma.com/"></a></li>
       </ul>
     </div>
   </section>
@@ -120,12 +123,13 @@
       </div>
       <div class="footer-contato">
         <ul>
-          <li><a target="_blank" href="https://www.linkedin.com/in/renatonunesan/"><img src="./img/github.svg" alt=""></a></li>
-          <li><a target="_blank" href="https://github.com/renatonunesan"><img src="./img/linkedin.svg" alt=""></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/renatonunesan/"><img src="./img/github.svg" alt="" width="60" height="60"></a></li>
+          <li><a target="_blank" href="https://github.com/renatonunesan"><img src="./img/linkedin.svg" alt="" width="60" height="60"></a></li>
         </ul>
       </div>
     </div>
   </footer>
   </main>
+  <script type="module" src="js/script.js"></script>
 </body>
 </html>

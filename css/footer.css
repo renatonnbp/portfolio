@@ -36,6 +36,21 @@
 
 .footer-contato li {
   margin-right: 20px;
+  position: relative;
+}
+
+.footer-contato a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #132858, #1056E5, #186DF8);
+  position: absolute;
+  bottom: 0;
+  transition: .3s ease;
+}
+
+.footer-contato a:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 1000px) {

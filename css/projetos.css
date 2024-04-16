@@ -50,12 +50,20 @@
   background-color: #132858;
 }
 
-.desktop img {
-  border-radius: 5px;
-  border: 3px solid #132858;
+.animadesktop {
+  position: relative;
 }
 
-.mobile img {
+.animamobile {
+  max-width: 30%;
+  position: absolute;
+  top: 12px;
+  right: -5px;
+  transform: rotate(5deg);
+  z-index: 1;
+}
+
+.proj img {
   border-radius: 5px;
   border: 3px solid #132858;
 }
@@ -78,6 +86,13 @@
   left: -20px;
 }
 
+.descricao-projeto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .descricao-projeto p {
   color: #EEF7FF;
   font-family: Montserrat;
@@ -90,21 +105,33 @@
   color: #186DF8;
 }
 
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn a {
   display: inline-flex;
   align-items: center;
-  background-image: linear-gradient(to top, #1056E5, #186DF8, #56AFFF);
+  background-color: #0B1835;
+  border: 3px solid #132858;
   text-decoration: none;
   color: #EEF7FF;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: bold;
-  padding: 17px 34px;
+  padding: 15px 25px;
   border-radius: 5px;
   position: relative;
+  transition: .5s;
 }
 
 .btn a img {
   margin-left: 10px;
+}
+
+.btn a:hover {
+  border: 3px solid #186DF8;
 }
 
 .imagens {
@@ -129,6 +156,30 @@
   background-repeat: no-repeat;
   background-position: right center;
   padding-right: 25px;
+}
+
+.repolink span {
+  position: relative;
+}
+
+.repolink span::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(
+    to right, 
+    #071024,
+    #173E91,
+    #186DF8
+  );
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: .5s ease;
+}
+
+.repolink span:hover::after {
+  width: 100%;
 }
 
 .arrow {
@@ -177,8 +228,7 @@
     left: -15px;
   }
   .descricao-projeto p {
-    font-size: .8rem;
-    max-width: 20ch;
+    font-size: .9rem;
   }
   .repo a {
     font-size: 1rem;
@@ -190,7 +240,7 @@
 
   @media (max-width: 768px) {
     .projetos-container {
-      padding: 25px 35px;
+      padding: 40px 17.5px;
       grid-template-columns: 1fr 1fr;
     }
     .desktop {
