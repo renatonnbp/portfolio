@@ -34,7 +34,7 @@
 }
 
 .header-menu a:hover {
-  color: #EEF7FF;
+  color: #FFFFFF;
 }
 
 .header-menu span {
@@ -64,14 +64,11 @@
 @media (max-width: 1000px) {
   .header {
     flex-direction: column;
-    gap: 40px;
   }
   .marca {
     max-width: 250px;
   }
   .header-menu {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    display: none;
   }
 }

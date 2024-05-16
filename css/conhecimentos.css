@@ -35,6 +35,13 @@
   width: 70px; 
   height: 70px; 
   background-size: cover;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: .2s;
+}
+
+.conhecimento-container a:hover {
+  border: 1px solid #186DF8;
 }
 
 .conhecimento-container a[href*="https://developer.mozilla.org/en-US/docs/Web/HTML"] {
@@ -49,34 +56,16 @@
   background-image: url('../img/js.svg');
 }
 
-.conhecimento-container a[href*="https://react.dev/"] {
-  background-image: url('../img/react.svg');
-}
-
-.conhecimento-container a[href*="https://vuejs.org/"] {
-  background-image: url('../img/vue.svg');
-}
-
-.conhecimento-container a[href*="https://www.typescriptlang.org/"] {
-  background-image: url('../img/ts.svg');
-}
-
 .conhecimento-container a[href*="https://www.figma.com/"] {
   background-image: url('../img/figma.svg');
 }
 
-.conhecimento-container a::after {
-  content: '';
-  width: 0%;
-  height: 2px;
-  background: linear-gradient(to right, #132858, #1056E5, #186DF8);
-  position: absolute;
-  bottom: 0;
-  transition: .3s ease;
+.conhecimento-container a[href*="https://www.python.org/"] {
+  background-image: url('../img/python.svg');
 }
 
-.conhecimento-container a:hover::after {
-  width: 100%;
+.conhecimento-container a[href*="https://www.djangoproject.com/"] {
+  background-image: url('../img/dj.svg');
 }
 
 @media (min-width: 1500px) {
