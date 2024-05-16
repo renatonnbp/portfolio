@@ -5,14 +5,16 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
-  background-color: #0B1835;
-  border: 2px solid #132858;
+  background-color: var(--cor-w);
+  border: 1px solid var(--cor-c);
   border-radius: 10px;
   position: relative;
 }
 
 .introducao-perfil img {
   max-width: 1200px;
+  border: 1px solid var(--cor-c);
+  border-radius: 50%;
 }
 
 .san {
@@ -26,21 +28,21 @@
 .introducao-sobre h2 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #186DF8;
+  color: var(--cor-p);
   padding-bottom: 10px;
 }
 
 .introducao-sobre h1 {
   font-size: 2.2rem;
   font-weight: 600;
-  color: #EEF7FF;
+  color: var(--cor-4);
   padding-bottom: 10px;
 }
 
 .introducao-sobre h3 {
   font-size: 1.3rem;
   font-weight: 500;
-  color: #D9EDFF;
+  color: var(--cor-3);
   padding-bottom: 30px;
   position: relative;
 }
@@ -49,7 +51,7 @@
   content: '';
   width: 5px;
   height: 17px;
-  background-color: #186DF8;
+  background-color: var(--cor-p);
   position: absolute;
   top: 4px;
   left: -15px;
@@ -60,7 +62,7 @@
   font-weight: 500px;
   font-family: Montserrat;
   line-height: 30px;
-  color: #D9EDFF;
+  color: var(--cor-3);
 }
 
 @media (min-width: 1650px) {
@@ -127,7 +129,7 @@
 @media (max-width: 768px) {
   .introducao {
     min-width: 250px;
-    margin: 40px 17.5px;
+    margin: 40px 40px;
     padding: 16.5px 25px;
   }
 }

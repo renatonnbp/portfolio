@@ -1,5 +1,5 @@
 .conhecimentos {
-  background-color: #040915;
+  background-color: var(--cor-1);
 }
 
 .conhecimento-container {
@@ -12,7 +12,7 @@
 }
 
 .subtitulo {
-  color: #186DF8;
+  color: var(--cor-p);
   font-weight: bold;
   max-width: 6ch;
 }
@@ -41,7 +41,7 @@
 }
 
 .conhecimento-container a:hover {
-  border: 1px solid #186DF8;
+  border: 1px solid var(--cor-p);
 }
 
 .conhecimento-container a[href*="https://developer.mozilla.org/en-US/docs/Web/HTML"] {
@@ -92,7 +92,7 @@
     content: '';
     width: 5px;
     height: 5px;
-    background-color: #186DF8;
+    background-color: var(--cor-p);
     position: absolute;
     top: 22px;
     left: 230px;
@@ -104,6 +104,9 @@
 
 @media (max-width: 768px) {
   .conhecimento-container {
+    margin-top: -40px;
+    margin-right: 40px;
+    margin-left: 40px;
     padding: 40px 17.5px;
   }
 }

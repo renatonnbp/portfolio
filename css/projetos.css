@@ -1,5 +1,5 @@
 .projetos {
-  background-color: #050B1B;
+  background-color: var(--cor-w);
   margin-top: -100px;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .subtitulo2 {
-  color: #EEF7FF;
+  color: var(--cor-4);
   font-weight: bold;
   font-size: 4rem;
   position: relative;
@@ -37,7 +37,7 @@
   content: '';
   width: 10px;
   height: 10px;
-  background-color: #186DF8;
+  background-color: var(--cor-p);
   position: absolute;
   top: 52px;
   left: 240px;
@@ -47,7 +47,7 @@
   grid-column: span 3;
   width: 100%;
   height: 1px;
-  background-color: #132858;
+  background-color: var(--cor-c);
 }
 
 .animadesktop {
@@ -65,12 +65,12 @@
 
 .proj img {
   border-radius: 5px;
-  border: 3px solid #132858;
+  border: 3px solid var(--cor-2);
 }
 
 .titulo-projeto {
   grid-column: 1;
-  color: #EEF7FF;
+  color: var(--cor-4);
   font-size: 2rem;
   margin-left: 20px;
   position: relative;
@@ -80,7 +80,7 @@
   content: '';
   width: 5px;
   height: 24px;
-  background-color: #186DF8;
+  background-color: var(--cor-p);
   position: absolute;
   top: 6px;
   left: -20px;
@@ -94,7 +94,7 @@
 }
 
 .descricao-projeto p {
-  color: #EEF7FF;
+  color: var(--cor-4);
   font-family: Montserrat;
   font-size: 1rem;
   margin-bottom: 40px;
@@ -102,7 +102,7 @@
 }
 
 .descricao-projeto p strong {
-  color: #186DF8;
+  color: var(--cor-p);
 }
 
 .btn {
@@ -114,10 +114,10 @@
 .btn a {
   display: inline-flex;
   align-items: center;
-  background-color: #0B1835;
-  border: 3px solid #132858;
+  background-color: var(--cor-1);
+  border: 1px solid var(--cor-2);
   text-decoration: none;
-  color: #EEF7FF;
+  color: var(--cor-4);
   font-size: 1rem;
   font-weight: bold;
   padding: 15px 25px;
@@ -131,7 +131,7 @@
 }
 
 .btn a:hover {
-  border: 3px solid #186DF8;
+  border: 1px solid var(--cor-p);
 }
 
 .imagens {
@@ -151,7 +151,7 @@
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #186DF8;
+  color: var(--cor-p);
   background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
   background-position: right center;
@@ -168,9 +168,8 @@
   height: 2px;
   background: linear-gradient(
     to right, 
-    #071024,
-    #173E91,
-    #186DF8
+    #141414,
+    #E83030
   );
   position: absolute;
   bottom: -5px;
@@ -241,6 +240,7 @@
   @media (max-width: 768px) {
     .projetos-container {
       padding: 40px 17.5px;
+      margin: 40px 40px;
       grid-template-columns: 1fr 1fr;
     }
     .desktop {

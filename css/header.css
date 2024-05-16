@@ -13,7 +13,7 @@
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #132858;
+  background-color: var(--cor-c);
 }
 
 .header-menu {
@@ -28,7 +28,7 @@
   line-height: 1.3;
   padding: 10px 20px;
   text-decoration: none;
-  color: #D9EDFF;
+  color: var(--cor-3);
   display: block;
   transition: .5s;
 }
@@ -47,9 +47,8 @@
   height: 2px;
   background: linear-gradient(
     to right, 
-    #071024,
-    #173E91,
-    #186DF8
+    #141414,
+    #E83030
   );
   position: absolute;
   bottom: -5px;
